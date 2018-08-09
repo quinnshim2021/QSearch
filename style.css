@@ -1,0 +1,43 @@
+﻿body
+{
+	background-image: url("glass.jpeg");
+	padding: 0;
+	color:whitesmoke;
+	font-family: Arial;
+	overflow: hidden;
+}
+p {
+	margin: 0;
+}
+button[id="search"] {
+	background-color: whitesmoke; 
+	border: none;
+	border-radius: 8px;
+	color: #080133;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	position: absolute;
+	left: 120px;
+	bottom: 9px;
+}
+button[id="rules"] {
+	background-color: #080133;
+	border: none;
+	border-radius: 8px;
+	color: whitesmoke;
+	padding: 5px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	bottom: 5px;
+}
+
+h2[id="title"] {
+	text-align: center;
+}

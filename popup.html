@@ -1,0 +1,42 @@
+﻿<!--QSearch-->
+<!--Developer: Quinn Shim
+Completed: 1.0 complete August 8, 2018
+Summary: Can search a name on any of 15 social media platforms at the same time. Opens new tabs for each site.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>QSearch</title>
+</head>
+<body>
+<script type="text/javascript" src="popup.js"></script>
+
+<p>Which sites would you like to search?</p> <!--sets up the checkboxes that will be used to determine which sites to visit. All have unique ID-->
+LinkedIn: <input type="checkbox" id="linkedin"> Reddit: <input type="checkbox" id="reddit"> Facebook: <input type="checkbox" id="facebook"> 
+Twitter: <input type="checkbox" id="twitter"> Wikipedia (article): <input type="checkbox" id="wikipedia"> 
+<br>
+YouTube: <input type="checkbox" id="youtube"> Google Plus: <input type="checkbox" id="gplus"> IMDb: <input type="checkbox" id="imdb">
+Pinterest: <input type="checkbox" id="pinterest"> Tumblr: <input type="checkbox" id="tumblr">
+<br>
+Wikipedia (user): <input type="checkbox" id="wikiuser"> Quora: <input type="checkbox" id="quora"> Google: <input type="checkbox" id="google">
+<hr>
+Instagram (See 'Help'): <input type="checkbox" id="instagram" title="Not recommended. Must type in EXACT username to work"> Twitch (See 'Help'): <input type="checkbox" id="twitch" title="Not recommended. Must type in EXACT username to work">
+<hr>
+<hr>
+<p>Type the name of person:</p> <!--Input tag for splitting in js file-->
+<input id="name" placeholder="Who are you looking for?" size="55" maxlength="55" title="Search person on all sites selected above!">
+<hr>
+<br>
+
+<p id="noName"></p>
+<p id="noSites"></p>
+<p id="howto1"></p> <!--linked with id=rules button-->
+<p id="howto2"></p>
+<p id="howto3"></p>
+<p id="howto4"></p>
+<br>
+<br>
+<button id="search" title="Search person on all sites selected above!">Search sites!</button>
+<button id="rules" title="Show how to use">Help</button>
+</body>
+</html>
