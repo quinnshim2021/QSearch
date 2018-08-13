@@ -1,4 +1,4 @@
-﻿body
+body[id="q"]
 {
 	background-image: url("glass.jpeg");
 	padding: 0;
@@ -9,7 +9,10 @@
 p {
 	margin: 0;
 }
-button[id="search"] {
+html, body {
+    overflow-y: visible;
+}
+button[id="qSearchButton"] {
 	background-color: whitesmoke; 
 	border: none;
 	border-radius: 8px;
@@ -24,6 +27,15 @@ button[id="search"] {
 	position: absolute;
 	left: 120px;
 	bottom: 9px;
+}
+button[id="select"] {
+	border-radius: 8px;
+	background-color: whitesmoke;
+	display: inline-block;
+	border: none;
+	height: 15px;
+	width: 60px;
+	font-size: 10px;
 }
 button[id="rules"] {
 	background-color: #080133;
