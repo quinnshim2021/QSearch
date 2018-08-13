@@ -1,14 +1,52 @@
 //Javascript Source Code QSearch
 document.addEventListener('DOMContentLoaded', function() {
+	document.getElementById("select").addEventListener('click', function() { //select/deselct all button
+		if (document.getElementById("select").innerHTML == "Select All") {
+			document.getElementById("select").innerHTML = "Deselect";
+			document.getElementById("facebook").checked = true;  //prob there's a better way to do this
+			document.getElementById("google").checked = true;
+			document.getElementById("twitter").checked = true;
+			document.getElementById("twitch").checked = true;
+			document.getElementById("quora").checked = true;
+			document.getElementById("gplus").checked = true;
+			document.getElementById("wikipedia").checked = true;
+			document.getElementById("wikiuser").checked = true;
+			document.getElementById("linkedin").checked = true;
+			document.getElementById("pinterest").checked = true;
+			document.getElementById("youtube").checked = true;
+			document.getElementById("tumblr").checked = true;
+			document.getElementById("instagram").checked = true;
+			document.getElementById("imdb").checked = true;
+			document.getElementById("reddit").checked = true;
+		} else {
+			document.getElementById("select").innerHTML = "Select All";
+			document.getElementById("facebook").checked = false;  //prob there's a better way to do this
+			document.getElementById("google").checked = false;
+			document.getElementById("twitter").checked = false;
+			document.getElementById("twitch").checked = false;
+			document.getElementById("quora").checked = false;
+			document.getElementById("gplus").checked = false;
+			document.getElementById("wikipedia").checked = false;
+			document.getElementById("wikiuser").checked = false;
+			document.getElementById("linkedin").checked = false;
+			document.getElementById("pinterest").checked = false;
+			document.getElementById("youtube").checked = false;
+			document.getElementById("tumblr").checked = false;
+			document.getElementById("instagram").checked = false;
+			document.getElementById("imdb").checked = false;
+			document.getElementById("reddit").checked = false;
+		}
+	});
+
 	var input = document.getElementById("name");	//Enter button while in input tag
 	input.addEventListener("keyup", function(event) {
 		event.preventDefault();
 		if (event.keyCode === 13) {
-			document.getElementById("search").click(); //calls regular button click
+			document.getElementById("qSearchButton").click(); //calls regular button click
 		}
 	});
 
-	document.getElementById('search').addEventListener('click', function() { //make it so that enter key does the same thing
+	document.getElementById('qSearchButton').addEventListener('click', function() { //make it so that enter key does the same thing
 
 		var name = true;
 		if (document.getElementById("name").value.length == 0) { //checks if they entered nothing
@@ -222,7 +260,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				document.getElementById("noSites").innerHTML = "";
 			if (document.getElementById("noName").innerHTML != "")
 				document.getElementById("noName").innerHTML = "";
-			document.getElementById("search").innerHTML = "Searched :)";
+			document.getElementById("qSearchButton").innerHTML = "Searched :)";
 		}
 		else
 			document.getElementById("noName").innerHTML = "Must enter a name! Try again :)";
